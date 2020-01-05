@@ -185,6 +185,66 @@ $navbar-nav-link-padding-x:16px;
     margin-left: auto;
 }
 
+
+//LightBox
+.modalLightBox{
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+    height: 100vh;
+    width: 100%;
+
+}
+.navigate-icons--lightBox i{
+    color: white;
+}
+.navigate-icons--lightBox:hover{
+    cursor: pointer;
+}
+.closeModalLightBox{
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.closeModalLightBox:hover{
+    cursor: pointer;
+}
+.closeModalLightBox i{
+    font-size: 54px;
+    color: white;
+}
+.closedLightBox{
+    visibility: visible;
+    opacity: 1;
+    animation: closedLightBox .2s both ease-in-out;
+}
+@keyframes closedLightBox {
+    to{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.openLightBox{
+    visibility: hidden;
+    opacity: 0;
+    animation: openLightBox .2s both ease-in-out;
+}
+@keyframes openLightBox {
+    to{
+        visibility: visible;
+        opacity: 1;
+    }
+}
+
+// body{
+//     overflow-y: hidden;
+// }
+
 // Required
 
 @import "../node_modules/bootstrap/scss/functions";
