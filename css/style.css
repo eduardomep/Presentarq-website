@@ -15,11 +15,11 @@ html, * {
 }
 
 .jumbotron {
-  height: 70vh;
+  height: 80vh;
 }
 
 .jumbotron h1 {
-  font-weight: 500 !important;
+  font-weight: normal !important;
   margin-bottom: 32px;
 }
 
@@ -45,6 +45,7 @@ html, * {
 .header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/background-image.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   min-height: 100vh;
 }
@@ -6932,7 +6933,16 @@ textarea.form-control {
   }
 }
 
+@media (min-width: 992px) {
+  .main-title {
+    font-size: 80px;
+  }
+}
 @media (max-width: 991.98px) {
+  .navbar {
+    background-color: #0B0B0B !important;
+  }
+
   .contact-button {
     margin-top: 24px;
     padding: 12px 12px 12px 12px;
@@ -6957,10 +6967,6 @@ textarea.form-control {
   }
 }
 @media (max-width: 575.98px) {
-  .vh-xs {
-    height: 75vh !important;
-  }
-
   .image-gallery {
     height: 500px;
   }
@@ -6995,7 +7001,7 @@ textarea.form-control {
   }
 
   .jumbotron h1 {
-    font-size: 32px !important;
+    font-size: 34px !important;
   }
 
   h1, h2 {
@@ -7008,7 +7014,7 @@ textarea.form-control {
 
   .jumbotron {
     justify-content: center;
-    height: 50vh;
+    height: 85vh;
   }
 
   .jumbotron h1 span {
@@ -7021,6 +7027,11 @@ textarea.form-control {
 
   .service-description {
     padding: 12px;
+  }
+
+  .my-section {
+    margin-top: 36px;
+    margin-bottom: 36px;
   }
 }
 
