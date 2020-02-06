@@ -66,7 +66,7 @@ html, * { font-family: 'Inter', sans-serif; color: #404040;}
     height: 600px;
 }
 
-.gallery-item{
+.main-gallery-item{
     height: 300px;
     object-fit: cover;
     width: calc(100%/5);
@@ -75,13 +75,13 @@ html, * { font-family: 'Inter', sans-serif; color: #404040;}
 
 }
 
-.gallery-item img{
+.main-gallery-item img{
     height: 300px;
     object-fit: cover;
     width: 100%;
     transition: .5s;
 }
-.gallery-item img:hover{
+.main-gallery-item img:hover{
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -130,6 +130,9 @@ html, * { font-family: 'Inter', sans-serif; color: #404040;}
     transition: all .3s ease-in-out;
     text-decoration: none;
 }
+
+
+
 .contact-button:hover , .contact-button--footer:hover{
     text-decoration: none;
     background-position: left bottom;
@@ -155,6 +158,18 @@ html, * { font-family: 'Inter', sans-serif; color: #404040;}
     text-decoration: none;
 }
 
+.button{
+    text-transform: uppercase;
+    padding: 6px 12px 6px 12px;
+    background-color: #2F80ED;
+    color: white;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+.button:hover{
+    background-color: rgb(38, 114, 214);
+}
 .contact-button--footer:hover *{
     color:#0B0B0B !important ;
 }
@@ -163,6 +178,9 @@ footer{
     background-color: #0B0B0B;
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.bg-black{
+    background-color: #0B0B0B;
 }
 footer *{
    color: #E8E8E8;
@@ -302,6 +320,49 @@ $navbar-nav-link-padding-x:16px;
     width: 100%;
     padding: 50px 12px 20px 12px;
 }
+.contact-image{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/background-image.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 156px 54px 0px 54px !important;
+}
+.contact-image *{
+    color: white;
+    text-decoration: none;
+}
+.contact-section .row{
+    height: 92vh;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  
+  }
+
+  label{
+    font-weight: 500;
+  }
+
+  .input{
+    background: #F7F7F7;
+    border-radius: 4px;
+    
+  }
+
+  .input:focus{
+      background-color: white;
+      border: solid #2F80ED 1px;
+      color: #0B0B0B;
+  }
+  .input:not(:placeholder-shown){
+    background-color: white;
+    color: #0B0B0B;
+  }
+
 
 // body{
 //     overflow-y: hidden;
@@ -362,14 +423,14 @@ $navbar-nav-link-padding-x:16px;
     .image-gallery {
         height: 500px;
     }
-    .gallery-item{
+    .main-gallery-item{
         height: 200px;
         width: calc(100%/4);
     }
-    .gallery-item:last-child{
+    .main-gallery-item:last-child{
         display: none;
     }
-    .gallery-item:nth-child(7){
+    .main-gallery-item:nth-child(7){
         display: none;
     }
 
@@ -387,6 +448,15 @@ $navbar-nav-link-padding-x:16px;
         font-size: 20px !important;
 
     }
+    .contact-image{
+        padding: 32px !important;
+        font-size: 32px;
+
+    }
+    .contact-section .row{
+        height: auto;
+    }
+    
     
 
     
@@ -400,28 +470,28 @@ $navbar-nav-link-padding-x:16px;
     .image-gallery {
         height: 500px;
     }
-    .gallery-item{
+    .main-gallery-item{
         height: 150px;
         width: calc(100%/3);
     }
 
-    .gallery-item:nth-child(3n+2){
+    .main-gallery-item:nth-child(3n+2){
         border: solid white 1px !important;
     }
-    .gallery-item:nth-child(3n+1){
+    .main-gallery-item:nth-child(3n+1){
         border-top: solid white 1px;
         border-right: solid white 1px;
         border-bottom: solid white 1px;
     }
-    .gallery-item:nth-child(3n){
+    .main-gallery-item:nth-child(3n){
         border-top: solid white 1px;
         border-left: solid white 1px;
         border-bottom: solid white 1px;
     }
-    .gallery-item:last-child{
+    .main-gallery-item:last-child{
         display: none;
     }
-    .gallery-item:nth-child(7){
+    .main-gallery-item:nth-child(7){
         display: block;
     }
     .jumbotron h1 {
